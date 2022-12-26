@@ -40,12 +40,13 @@
         android:layout_height="50dp"
         android:background="@drawable/btn_return_to_top"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="2dp"
+        android:layout_marginBottom="56dp"
         android:padding="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/adView_2"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/arrow_top">
+        app:srcCompat="@drawable/arrow_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
     </ImageButton>
 
     <com.google.android.gms.ads.AdView

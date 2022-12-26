@@ -49,6 +49,7 @@
 
     <string name="text_title_info">Информация</string>
     <string name="text_message_info">"Знание английского является неотъемлемым элементом современного успешного человека!\n\nУделяйте каждому уроку по 15 минут в день и результат можно увидеть уже через несколько дней.\n\nДобавляйте слова, которые Вам не известны из \"Словаря\" в \"Избранные слова\" и изучайте их.\n\nТакже, не забываете о \"Работе над ошибками\"!"</string>
+    <string name="text_button_info">Хорошо!</string>
 
     <!--text hint edit text -->
     <string name="text_enter_ua_ru">Введите украинское/русское слово</string>
@@ -86,18 +87,19 @@
 
     <!--Google adMob key original -->
 
-    <!-- <string name="google_main_menu_key">ca-app-pub-6890166018762231/3678862349</string>
-     <string name="google_library_key">ca-app-pub-6890166018762231/8739617334</string>
-     <string name="google_select_key">ca-app-pub-6890166018762231/7426535669</string>
-     <string name="google_learning_menu_key">ca-app-pub-6890166018762231/4460626824</string>
-     <string name="google_learning_words_key">ca-app-pub-6890166018762231/6113453992</string>-->
+    <string name="google_main_menu_key">ca-app-pub-6890166018762231/3678862349</string>
+    <string name="google_library_key">ca-app-pub-6890166018762231/8739617334</string>
+    <string name="google_select_key">ca-app-pub-6890166018762231/7426535669</string>
+    <string name="google_learning_menu_key">ca-app-pub-6890166018762231/4460626824</string>
+    <string name="google_learning_words_key">ca-app-pub-6890166018762231/6113453992</string>
+    <string name="google_hint_key">ca-app-pub-6890166018762231/5131151602</string>
 
     <!--Google adMob key test -->
-    <string name="google_main_menu_key">ca-app-pub-3940256099942544/6300978111</string>
+    <!--<string name="google_main_menu_key">ca-app-pub-3940256099942544/6300978111</string>
     <string name="google_library_key">ca-app-pub-3940256099942544/6300978111</string>
     <string name="google_select_key">ca-app-pub-3940256099942544/6300978111</string>
     <string name="google_learning_menu_key">ca-app-pub-3940256099942544/6300978111</string>
     <string name="google_learning_words_key">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="google_hint_key">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="google_hint_key">ca-app-pub-3940256099942544/5224354917</string>-->
 
 </resources>

@@ -258,7 +258,7 @@ class MenuLearningWordsActivity : AppCompatActivity(), View.OnClickListener {
             .setCancelable(false)
             .setTitle(getString(R.string.text_title_info))
             .setMessage(String.format(getString(R.string.text_message_info)))
-            .setPositiveButton(getString(R.string.text_yes), listener)
+            .setPositiveButton(getString(R.string.text_button_info), listener)
             .setIcon(R.drawable.notebook_pencil)
             .create()
 

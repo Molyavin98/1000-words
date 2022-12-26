@@ -50,6 +50,7 @@
     <!-- text alert dialog info -->
     <string name="text_title_info">Інформація</string>
     <string name="text_message_info">"Знання англійської мови є невід'ємним елементом сучасної успішної людини!\n\nПриділяйте кожному уроку по 15 хвилин в день і результат можна побачити вже через декілька днів.\n\nДодавайте слова, які Вам не відомі з \"Словника\" до \"Вибраних слів\" та вивчайте їх.\n\nТакож, не забуваєте про \"Роботу над помилками\"!"</string>
+    <string name="text_button_info">Добре!</string>
 
     <!--text hint edit text -->
     <string name="text_enter_ua_ru">Введіть українське/російське слово</string>
@@ -87,18 +88,19 @@
 
     <!--Google adMob key original -->
 
-    <!-- <string name="google_main_menu_key">ca-app-pub-6890166018762231/3678862349</string>
-     <string name="google_library_key">ca-app-pub-6890166018762231/8739617334</string>
-     <string name="google_select_key">ca-app-pub-6890166018762231/7426535669</string>
-     <string name="google_learning_menu_key">ca-app-pub-6890166018762231/4460626824</string>
-     <string name="google_learning_words_key">ca-app-pub-6890166018762231/6113453992</string>-->
+    <string name="google_main_menu_key">ca-app-pub-6890166018762231/3678862349</string>
+    <string name="google_library_key">ca-app-pub-6890166018762231/8739617334</string>
+    <string name="google_select_key">ca-app-pub-6890166018762231/7426535669</string>
+    <string name="google_learning_menu_key">ca-app-pub-6890166018762231/4460626824</string>
+    <string name="google_learning_words_key">ca-app-pub-6890166018762231/6113453992</string>
+    <string name="google_hint_key">ca-app-pub-6890166018762231/5131151602</string>
 
     <!--Google adMob key test -->
-    <string name="google_main_menu_key">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="google_library_key">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="google_select_key">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="google_learning_menu_key">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="google_learning_words_key">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="google_hint_key">ca-app-pub-3940256099942544/5224354917</string>
+    <!-- <string name="google_main_menu_key">ca-app-pub-3940256099942544/6300978111</string>
+     <string name="google_library_key">ca-app-pub-3940256099942544/6300978111</string>
+     <string name="google_select_key">ca-app-pub-3940256099942544/6300978111</string>
+     <string name="google_learning_menu_key">ca-app-pub-3940256099942544/6300978111</string>
+     <string name="google_learning_words_key">ca-app-pub-3940256099942544/6300978111</string>
+     <string name="google_hint_key">ca-app-pub-3940256099942544/5224354917</string>-->
 
 </resources>
