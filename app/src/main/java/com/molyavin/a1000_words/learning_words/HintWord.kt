@@ -73,7 +73,7 @@ class HintWord(
         MobileAds.initialize(context) {}
 
         val adRequest = AdRequest.Builder().build()
-        RewardedAd.load(context, "ca-app-pub-6890166018762231/5131151602", adRequest,
+        RewardedAd.load(context, context.getString(R.string.google_hint_key), adRequest,
             object : RewardedAdLoadCallback() {
                 override fun onAdFailedToLoad(adError: LoadAdError) {
                     super.onAdFailedToLoad(adError)

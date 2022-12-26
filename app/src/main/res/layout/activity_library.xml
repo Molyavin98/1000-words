@@ -56,7 +56,7 @@
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         ads:adSize="BANNER"
-        ads:adUnitId="ca-app-pub-6890166018762231/8739617334"
+        ads:adUnitId="@string/google_library_key"
         ads:layout_constraintStart_toStartOf="parent"
         ads:layout_constraintEnd_toEndOf="parent"
         ads:layout_constraintBottom_toBottomOf="parent">

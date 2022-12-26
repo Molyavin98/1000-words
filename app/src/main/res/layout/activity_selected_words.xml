@@ -54,7 +54,7 @@
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         ads:adSize="BANNER"
-        ads:adUnitId="ca-app-pub-6890166018762231/7426535669"
+        ads:adUnitId="@string/google_select_key"
         ads:layout_constraintStart_toStartOf="parent"
         ads:layout_constraintEnd_toEndOf="parent"
         ads:layout_constraintBottom_toBottomOf="parent">
