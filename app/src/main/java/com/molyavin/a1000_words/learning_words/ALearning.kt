@@ -51,7 +51,7 @@ abstract class ALearning {
         binding.btnHint.setOnClickListener {
             HintWord(
                 context, parseWords.enWords[index],
-                parseWords.uaWords[index], parseWords.ruWords[index], binding
+                parseWords.uaWords[index], binding
             ).showHint()
         }
     }

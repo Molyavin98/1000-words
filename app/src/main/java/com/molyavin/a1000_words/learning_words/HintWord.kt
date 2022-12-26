@@ -17,7 +17,6 @@ class HintWord(
     val context: Context,
     private val engWord: String,
     private val uaWord: String,
-    private val ruWord: String,
     private val binding: ActivityLearningWordsBinding
 ) {
     private var mRewardedAd: RewardedAd? = null
