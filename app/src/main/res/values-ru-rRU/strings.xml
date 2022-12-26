@@ -64,6 +64,17 @@
     <string name="language_ua">🇺🇦 Украинский</string>
     <string name="language_ru">🇷🇺 Русский</string>
 
+    <string name="text_num_1">Урок 1\n\nСлова\n 1-100</string>
+    <string name="text_num_2">Урок 2\n\nСлова\n100-200</string>
+    <string name="text_num_3">Урок 3\n\nСлова\n200-300</string>
+    <string name="text_num_4">Урок 4\n\nСлова\n300-400</string>
+    <string name="text_num_5">Урок 5\n\nСлова\n400-500</string>
+    <string name="text_num_6">Урок 6\n\nСлова\n500-600</string>
+    <string name="text_num_7">Урок 7\n\nСлова\n600-700</string>
+    <string name="text_num_8">Урок 8\n\nСлова\n700-800</string>
+    <string name="text_num_9">Урок 9\n\nСлова\n800-900</string>
+    <string name="text_num_10">Урок 10\n\nСлова\n900-1000</string>
+
     <string-array name="language">
         <item>🇺🇸 Английский</item>
         <item>🇺🇦 Украинский</item>

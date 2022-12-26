@@ -32,7 +32,8 @@
         android:layout_marginEnd="@dimen/btn_back_margin"
         android:layout_marginTop="@dimen/btn_back_margin"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="@id/btn_back"
+        app:layout_constraintBottom_toBottomOf="@id/btn_back"/>
 
     <TextView
         android:id="@+id/textLesson"
@@ -81,7 +82,7 @@
             android:layout_height="@dimen/btn_menu"
             android:layout_margin="5dp"
             android:background="@drawable/btn_style_menu"
-            android:text="Урок 1\n\nСлова\n 1-100"
+            android:text="@string/text_num_1"
             android:textAllCaps="false"
             android:textSize="@dimen/text_size_menu"
             android:textStyle="bold"/>
@@ -92,7 +93,7 @@
             android:layout_height="@dimen/btn_menu"
             android:layout_margin="5dp"
             android:background="@drawable/btn_style_menu"
-            android:text="Урок 2\n\nСлова 100-200"
+            android:text="@string/text_num_2"
             android:textAllCaps="false"
             android:textSize="@dimen/text_size_menu"
             android:textStyle="bold"/>
@@ -103,7 +104,7 @@
             android:layout_height="@dimen/btn_menu"
             android:layout_margin="5dp"
             android:background="@drawable/btn_style_menu"
-            android:text="Урок 3\n\nСлова 200-300"
+            android:text="@string/text_num_3"
             android:textAllCaps="false"
             android:textSize="@dimen/text_size_menu"
             android:textStyle="bold"/>
@@ -114,7 +115,7 @@
             android:layout_height="@dimen/btn_menu"
             android:layout_margin="5dp"
             android:background="@drawable/btn_style_menu"
-            android:text="Урок 4\n\nСлова 300-400"
+            android:text="@string/text_num_4"
             android:textAllCaps="false"
             android:textSize="@dimen/text_size_menu"
             android:textStyle="bold"/>
@@ -125,7 +126,7 @@
             android:layout_height="@dimen/btn_menu"
             android:layout_margin="5dp"
             android:background="@drawable/btn_style_menu"
-            android:text="Урок 5\n\nСлова 400-500"
+            android:text="@string/text_num_5"
             android:textAllCaps="false"
             android:textSize="@dimen/text_size_menu"
             android:textStyle="bold"/>
@@ -137,7 +138,7 @@
             android:layout_margin="5dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/btn_style_menu"
-            android:text="Урок 6\n\nСлова 500-600"
+            android:text="@string/text_num_6"
             android:textAllCaps="false"
             android:textSize="@dimen/text_size_menu"
             android:textStyle="bold"/>
@@ -149,7 +150,7 @@
             android:layout_margin="5dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/btn_style_menu"
-            android:text="Урок 7\n\nСлова 600-700"
+            android:text="@string/text_num_7"
             android:textAllCaps="false"
             android:textSize="@dimen/text_size_menu"
             android:textStyle="bold"/>
@@ -161,7 +162,7 @@
             android:layout_margin="5dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/btn_style_menu"
-            android:text="Урок 8\n\nСлова 700-800"
+            android:text="@string/text_num_8"
             android:textAllCaps="false"
             android:textSize="@dimen/text_size_menu"
             android:textStyle="bold"/>
@@ -173,7 +174,7 @@
             android:layout_margin="5dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/btn_style_menu"
-            android:text="Урок 9\n\nСлова 800-900"
+            android:text="@string/text_num_9"
             android:textAllCaps="false"
             android:textSize="@dimen/text_size_menu"
             android:textStyle="bold"/>
@@ -185,7 +186,7 @@
             android:layout_margin="5dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/btn_style_menu"
-            android:text="Урок 10\n\nСлова 900-1000"
+            android:text="@string/text_num_10"
             android:textAllCaps="false"
             android:textSize="@dimen/text_size_menu"
             android:textStyle="bold"/>
