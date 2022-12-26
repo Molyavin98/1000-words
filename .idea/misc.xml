@@ -10,13 +10,14 @@
         <entry key="app/src/main/res/drawable/btn_style_menu.xml" value="0.1575" />
         <entry key="app/src/main/res/drawable/editext_style.xml" value="0.161" />
         <entry key="app/src/main/res/drawable/edittext_style.xml" value="0.2275" />
+        <entry key="app/src/main/res/drawable/info_24.xml" value="0.1119171142578125" />
         <entry key="app/src/main/res/drawable/linerleyout_style.xml" value="0.161" />
         <entry key="app/src/main/res/layout/activity_learning_words.xml" value="0.2039333048311244" />
         <entry key="app/src/main/res/layout/activity_ler_select_words.xml" value="0.2484375" />
         <entry key="app/src/main/res/layout/activity_library.xml" value="0.2484375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.28360748291015625" />
-        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.23489583333333333" />
-        <entry key="app/src/main/res/layout/activity_menu_learning_words.xml" value="0.20384615384615384" />
+        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_menu_learning_words.xml" value="0.20521590423257802" />
         <entry key="app/src/main/res/layout/activity_selected_words.xml" value="0.2484375" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.261871337890625" />
         <entry key="app/src/main/res/layout/check_internet_dialog.xml" value="0.25" />
