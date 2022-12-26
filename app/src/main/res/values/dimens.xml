@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_menu">60dp</dimen>
+    <dimen name="btn_back">50dp</dimen>
+    <dimen name="text_size_menu">16sp</dimen>
+    <dimen name="btn_text_size">12sp</dimen>
+</resources>

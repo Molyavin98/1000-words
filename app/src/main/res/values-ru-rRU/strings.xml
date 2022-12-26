@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">1000-English words</string>
+    <string name="text_prev">1000-Английских слов – легко!</string>
+    <string name="tap_to_start">Начать</string>
+
+    <!--menu text-->
+    <string name="btn_learning_words">Учить слова</string>
+    <string name="btn_library">Словарь</string>
+    <string name="btn_selected_words">Избранные слова</string>
+    <string name="enter_text">Введите английское слово</string>
+
+    <!-- text error-->
+    <string name="not_correct">Не верно!</string>
+    <string name="is_empty">Поле пустое!</string>
+    <string name="is_empty_edittext">Поле ввода пустое!</string>
+
+    <!-- text toast-->
+    <string name="toast_select">Добавьте слова из словаря к избранным!</string>
+    <string name="toast_push_message">Немножко усилий и все получится)</string>
+    <string name="toast_mistakes">У вас нет ошибок!</string>
+    <string name="toast_mistakes_done">Прекрасно, Вы справились!</string>
+    <string name="toast_free_word">Вы получили слово бесплатно!</string>
+
+    <!-- text menu learning -->
+    <string name="text_lesson">Уроки</string>
+    <string name="learning_select_words">Учить выбранные слова</string>
+    <string name="work_on_mistakes">Работа над ошибками</string>
+
+    <!--text learning activity -->
+    <string name="btn_checked">Проверить</string>
+    <string name="btn_next">Следующее</string>
+    <string name="edit_text_hint">Нажмите кнопку \"Следующее\"</string>
+    <string name="text_attempt">/3 попытка</string>
+    <string name="text_attempt_string">0/3 попытка</string>
+
+    <!-- hint -->
+    <string name="text_prompting">Подсказка</string>
+    <string name="text_show_video">Посмотреть видео и узнать слово?</string>
+
+    <string name="text_yes">Да</string>
+    <string name="text_no">Нет</string>
+    <!-- text alert dialog select word-->
+    <string name="text_delete">Удалить</string>
+    <string name="text_delete_all">Удалить все?</string>
+
+    <!-- text alert dialog select word-->
+    <string name="text_title">"Верные ответы"</string>
+    <string name="text_message">"За урок верных ответов %d!"</string>
+
+    <!--text hint edit text -->
+    <string name="text_enter_ua_ru">Введите украинское/русское слово</string>
+    <string name="text_enter_eng">Введите английское слово</string>
+
+    <!--text internet connection -->
+    <string name="text_internet">ОЙ-Йо-йо!</string>
+    <string name="text_internet_connection">Нет подключения к Интернету</string>
+    <string name="text_internet_button">Повторить попытку</string>
+
+    <string name="enFlag">🇺🇸</string>
+    <string name="uaFlag">🇺🇦</string>
+    <string name="ruFlag">🇷🇺</string>
+
+    <string name="language_en">🇺🇸 Английский</string>
+    <string name="language_ua">🇺🇦 Украинский</string>
+    <string name="language_ru">🇷🇺 Русский</string>
+
+    <string-array name="language">
+        <item>🇺🇸 Английский</item>
+        <item>🇺🇦 Украинский</item>
+        <item>🇷🇺 Русский</item>
+    </string-array>
+
+</resources>

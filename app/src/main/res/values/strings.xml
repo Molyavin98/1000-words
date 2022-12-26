@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">1000-English words</string>
+    <string name="text_prev">1000-Англійських слів - легко!</string>
+    <string name="tap_to_start">Розпочати</string>
+
+    <!--menu text-->
+    <string name="btn_learning_words">Вчити слова</string>
+    <string name="btn_library">Словник</string>
+    <string name="btn_selected_words">Вибрані слова</string>
+    <string name="enter_text">Введіть англійське слово</string>
+
+    <!-- text error-->
+    <string name="not_correct">Не вірно!</string>
+    <string name="is_empty">Поле пусте!</string>
+    <string name="is_empty_edittext">Поле вводу пусте!</string>
+
+    <!-- text toast-->
+    <string name="toast_select">Додайте слова із словника до вибраних!</string>
+    <string name="toast_push_message">Трішки зусіль і все вийде)</string>
+    <string name="toast_mistakes">У вас немає помилок!</string>
+    <string name="toast_mistakes_done">Чудово, Ви справились!</string>
+    <string name="toast_free_word">Ви отримали слово безкоштовно!</string>
+
+    <!-- text menu learning -->
+    <string name="text_lesson">Уроки</string>
+    <string name="learning_select_words">Вчити вибрані слова</string>
+    <string name="work_on_mistakes">Робота над помилками</string>
+
+    <!--text learning activity -->
+    <string name="btn_checked">Перевірити</string>
+    <string name="btn_next">Наступне</string>
+    <string name="edit_text_hint">Натисніть кнопку \"Наступне\"</string>
+    <string name="text_attempt">/3 спроба</string>
+    <string name="text_attempt_string">0/3 спроба</string>
+
+    <!-- hint -->
+    <string name="text_prompting">Підсказка</string>
+    <string name="text_show_video">Подивитися відео і дізнатися слово?</string>
+
+    <string name="text_yes">Так</string>
+    <string name="text_no">Ні</string>
+    <!-- text alert dialog select word-->
+    <string name="text_delete">Видалити</string>
+    <string name="text_delete_all">Видалити всі?</string>
+
+    <!-- text alert dialog select word-->
+    <string name="text_title">"Вірні відповіді"</string>
+    <string name="text_message">"За урок вірних відповідей %d!"</string>
+
+    <!--text hint edit text -->
+    <string name="text_enter_ua_ru">Введіть українське/російське слово</string>
+    <string name="text_enter_eng">Введіть англійське слово</string>
+
+    <!--text internet connection -->
+    <string name="text_internet">ОЙ-Йо-йо!</string>
+    <string name="text_internet_connection">Немає підключення до Інтернету</string>
+    <string name="text_internet_button">Повторити спробу</string>
+
+    <string name="enFlag">🇺🇸</string>
+    <string name="uaFlag">🇺🇦</string>
+    <string name="ruFlag">🇷🇺</string>
+
+    <string name="language_en">🇺🇸 Англійська</string>
+    <string name="language_ua">🇺🇦 Українська</string>
+    <string name="language_ru">🇷🇺 Російська</string>
+
+    <string-array name="language">
+        <item>🇺🇸 Англійська</item>
+        <item>🇺🇦 Українська</item>
+        <item>🇷🇺 Російська</item>
+    </string-array>
+
+</resources>

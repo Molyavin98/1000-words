@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".learning_words.LearningWordsActivity">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="@dimen/btn_back"
+        android:layout_height="@dimen/btn_back"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_style_menu"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/arrow_left">
+    </ImageButton>
+
+    <ImageView
+        android:id="@+id/imageNotebook"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/notebook_pencil"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/correctWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="0"
+        app:layout_constraintTop_toTopOf="@id/imageNotebook"
+        app:layout_constraintBottom_toBottomOf="@id/imageNotebook"
+        app:layout_constraintEnd_toStartOf="@id/imageNotebook">
+    </TextView>
+
+
+    <ImageButton
+        android:id="@+id/btn_hint"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/bulb"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageNotebook">
+    </ImageButton>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:shapeAppearance="@style/Cut"
+        app:boxBackgroundColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/wordsUaRu"
+        app:layout_constraintEnd_toEndOf="@id/wordsUaRu"
+        app:layout_constraintStart_toStartOf="@id/wordsUaRu"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+
+        <AutoCompleteTextView
+            android:id="@+id/drop_down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/language_en"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:inputType="none"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/wordsUaRu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/linearlayout_style"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="45dp"
+            tools:text="Word" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField"
+            android:background="@drawable/edittext_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:shapeAppearance="@style/Cut"
+            android:hint="@string/edit_text_hint">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextWord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:lines="1"
+                android:layout_marginEnd="5dp"
+                app:errorEnabled="true"
+                app:errorTextAppearance="@style/ErrorText">
+            </com.google.android.material.textfield.TextInputEditText>
+
+            <TextView
+                android:id="@+id/attempt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_attempt"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp">
+            </TextView>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/btn_checked"
+        android:textSize="@dimen/btn_text_size"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@id/btnNextWord"
+        app:layout_constraintHorizontal_weight="60"
+        app:layout_constraintStart_toStartOf="@id/wordsUaRu"
+        app:layout_constraintTop_toBottomOf="@id/wordsUaRu">
+    </Button>
+
+    <Button
+        android:id="@+id/btnNextWord"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/btn_next"
+        android:textSize="@dimen/btn_text_size"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@id/wordsUaRu"
+        app:layout_constraintHorizontal_weight="40"
+        app:layout_constraintStart_toEndOf="@id/btnCheck"
+        app:layout_constraintTop_toBottomOf="@id/wordsUaRu">
+    </Button>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-6890166018762231/6113453992"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintBottom_toBottomOf="parent">
+    </com.google.android.gms.ads.AdView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
