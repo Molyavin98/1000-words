@@ -4,6 +4,7 @@ import android.content.Intent
 import android.content.IntentFilter
 import android.net.ConnectivityManager
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import com.google.android.gms.ads.*
@@ -67,7 +68,9 @@ class MenuActivity : AppCompatActivity() {
 
             override fun onAdClosed() {}
 
-            override fun onAdFailedToLoad(adError: LoadAdError) {}
+            override fun onAdFailedToLoad(adError: LoadAdError) {
+                Log.d("ErrorAdMobb",adError.toString())
+            }
 
             override fun onAdImpression() {}
 

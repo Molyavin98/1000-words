@@ -6,10 +6,7 @@ import android.content.DialogInterface
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.LoadAdError
-import com.google.android.gms.ads.MobileAds
-import com.google.android.gms.ads.OnUserEarnedRewardListener
+import com.google.android.gms.ads.*
 import com.google.android.gms.ads.rewarded.RewardItem
 import com.google.android.gms.ads.rewarded.RewardedAd
 import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback
@@ -23,12 +20,14 @@ class HintWord(
     private val ruWord: String,
     private val binding: ActivityLearningWordsBinding
 ) {
-
-
     private var mRewardedAd: RewardedAd? = null
+    private var isLoading = false
 
 
     fun showHint() {
+
+        MobileAds.initialize(context) {}
+        loadRewardedAd()
 
         val listener = DialogInterface.OnClickListener { _, which ->
             when (which) {
@@ -38,20 +37,22 @@ class HintWord(
                     when (binding.dropDown.text.toString()) {
 
                         context.getString(R.string.language_en) -> {
-                            // binding.editTextWord.setText(uaWord)
-                            showAds(uaWord)
+                            binding.editTextWord.setText(uaWord)
+                            showRewardedVideo()
                         }
                         context.getString(R.string.language_ua) -> {
-                            // binding.editTextWord.setText(engWord)
-                            showAds(engWord)
+                            binding.editTextWord.setText(engWord)
+                            showRewardedVideo()
                         }
                         context.getString(R.string.language_ru) -> {
-                            // binding.editTextWord.setText(engWord)
-                            showAds(engWord)
+                            binding.editTextWord.setText(engWord)
+                            showRewardedVideo()
                         }
                     }
                 }
-                DialogInterface.BUTTON_NEGATIVE -> context.getString(R.string.text_no)
+                DialogInterface.BUTTON_NEGATIVE -> {
+                    context.getString(R.string.text_no)
+                }
             }
         }
 
@@ -67,34 +68,51 @@ class HintWord(
         dialog.show()
     }
 
+    private fun loadRewardedAd() {
+        if (mRewardedAd == null) {
+            isLoading = true
+            val adRequest = AdRequest.Builder().build()
 
-    private fun showAds(word: String) {
+            RewardedAd.load(context, context.getString(R.string.google_hint_key), adRequest,
+                object : RewardedAdLoadCallback() {
+                    override fun onAdFailedToLoad(adError: LoadAdError) {
+                        isLoading = false
+                        mRewardedAd = null
+                    }
 
-        MobileAds.initialize(context) {}
-
-        val adRequest = AdRequest.Builder().build()
-        RewardedAd.load(context, context.getString(R.string.google_hint_key), adRequest,
-            object : RewardedAdLoadCallback() {
-                override fun onAdFailedToLoad(adError: LoadAdError) {
-                    super.onAdFailedToLoad(adError)
-                    mRewardedAd = null
+                    override fun onAdLoaded(ad: RewardedAd) {
+                        mRewardedAd = ad
+                        isLoading = false
+                    }
                 }
+            )
+        }
+    }
 
-                override fun onAdLoaded(rewardedAd: RewardedAd) {
-                    super.onAdLoaded(rewardedAd)
-                    mRewardedAd = rewardedAd
-                }
-            })
+
+    private fun showRewardedVideo() {
 
         if (mRewardedAd != null) {
-            mRewardedAd?.show(context as Activity, OnUserEarnedRewardListener {
-                fun onUserEarnedReward(rewardItem: RewardItem) {
-                    binding.editTextWord.setText(word)
+            mRewardedAd?.fullScreenContentCallback =
+                object : FullScreenContentCallback() {
+                    override fun onAdDismissedFullScreenContent() {
+                        mRewardedAd = null
+                        loadRewardedAd()
+                    }
+
+                    override fun onAdFailedToShowFullScreenContent(adError: AdError) {
+                        mRewardedAd = null
+                    }
+
+                    override fun onAdShowedFullScreenContent() {}
                 }
-            })
-        } else {
-            Toast.makeText(context, context.getString(R.string.toast_free_word), Toast.LENGTH_SHORT).show()
-            binding.editTextWord.setText(word)
+
+            mRewardedAd?.show(
+                context as Activity,
+                OnUserEarnedRewardListener() {
+                    fun onUserEarnedReward(rewardItem: RewardItem) {}
+                }
+            )
         }
     }
 }

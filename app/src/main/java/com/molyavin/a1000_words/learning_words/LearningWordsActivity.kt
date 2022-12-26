@@ -6,12 +6,16 @@ import android.content.Intent
 import android.content.IntentFilter
 import android.net.ConnectivityManager
 import android.os.Bundle
+import android.util.Log
 import android.widget.ArrayAdapter
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import com.google.android.gms.ads.*
+import com.google.android.gms.ads.rewarded.RewardItem
 import com.google.android.gms.ads.rewarded.RewardedAd
+import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback
 import com.molyavin.a1000_words.R
 import com.molyavin.a1000_words.databinding.ActivityLearningWordsBinding
 import com.molyavin.a1000_words.parse_data.JsonParseWords
@@ -53,10 +57,9 @@ class LearningWordsActivity : AppCompatActivity() {
         binding.dropDown.setAdapter(adapter)
 
         onClickListener()
-
     }
 
-    private fun adListener(){
+    private fun adListener() {
 
         mAdView.adListener = object : AdListener() {
             override fun onAdClicked() {}
@@ -140,7 +143,6 @@ class LearningWordsActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {}
-
 
     companion object {
 

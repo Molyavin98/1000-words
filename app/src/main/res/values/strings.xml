@@ -79,11 +79,11 @@
     <string name="google_learning_words_key">ca-app-pub-6890166018762231/6113453992</string>-->
 
     <!--Google adMob key test -->
-    <string name="google_main_menu_key">ca-app-pub-6890166018762231~7278361852</string>
-    <string name="google_library_key">ca-app-pub-6890166018762231~7278361852</string>
-    <string name="google_select_key">ca-app-pub-6890166018762231~7278361852</string>
-    <string name="google_learning_menu_key">ca-app-pub-6890166018762231~7278361852</string>
-    <string name="google_learning_words_key">ca-app-pub-6890166018762231~7278361852</string>
-    <string name="google_hint_key">ca-app-pub-6890166018762231~7278361852</string>
+    <string name="google_main_menu_key">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="google_library_key">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="google_select_key">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="google_learning_menu_key">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="google_learning_words_key">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="google_hint_key">ca-app-pub-3940256099942544/5224354917</string>
 
 </resources>
