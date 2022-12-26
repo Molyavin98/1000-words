@@ -1,5 +1,6 @@
 package com.molyavin.a1000_words.learning_words
 
+import android.content.DialogInterface
 import android.content.Intent
 import android.content.IntentFilter
 import android.net.ConnectivityManager
@@ -8,6 +9,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import com.google.android.gms.ads.*
@@ -32,6 +34,7 @@ class MenuLearningWordsActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var lesson10: Button
     private lateinit var btnLearningSelectW: Button
     private lateinit var btnBack: ImageButton
+    private lateinit var btnInfo: ImageButton
     private lateinit var btnWorkMistakes: Button
 
     private val networkChangeListener: NetworkChangeListener = NetworkChangeListener()
@@ -57,6 +60,8 @@ class MenuLearningWordsActivity : AppCompatActivity(), View.OnClickListener {
             overridePendingTransition(R.anim.slideinback, R.anim.slideoutback)
         }
 
+        btnInfo.setOnClickListener {showInfo()}
+
         val dbMistakes = DBMistakesWord(context = this)
         dbMistakes.saveDataDB()
 
@@ -76,6 +81,7 @@ class MenuLearningWordsActivity : AppCompatActivity(), View.OnClickListener {
         lesson9 = findViewById(R.id.les9)
         lesson10 = findViewById(R.id.les10)
         btnBack = findViewById(R.id.btn_back)
+        btnInfo = findViewById(R.id.btn_info)
         btnLearningSelectW = findViewById(R.id.btnLearningSelect)
         btnWorkMistakes = findViewById(R.id.btnWorkMistakes)
 
@@ -236,6 +242,27 @@ class MenuLearningWordsActivity : AppCompatActivity(), View.OnClickListener {
     override fun onStop() {
         unregisterReceiver(networkChangeListener)
         super.onStop()
+    }
+
+
+    private fun showInfo() {
+
+        val listener = DialogInterface.OnClickListener { _, which ->
+            when (which) {
+
+                DialogInterface.BUTTON_POSITIVE -> {}
+            }
+        }
+
+        val dialog = AlertDialog.Builder(this)
+            .setCancelable(false)
+            .setTitle(getString(R.string.text_title_info))
+            .setMessage(String.format(getString(R.string.text_message_info)))
+            .setPositiveButton(getString(R.string.text_yes), listener)
+            .setIcon(R.drawable.notebook_pencil)
+            .create()
+
+        dialog.show()
     }
 
     override fun onBackPressed() {}
